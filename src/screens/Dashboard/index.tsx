@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import {
    Container,
    Text,
-   Button,
+   Title,
+   Envolve,
 } from './styles';
 
  
@@ -47,18 +48,24 @@ export function Dashboard(){
       <Container>
           <Text>{minutes < 10 ? '0' + minutes : minutes} : {seconds < 10 ? '0' + seconds : seconds}</Text>
     
-          <Button
-            title='Acionar'
+        <Envolve>
+          <Title
+           title='Acionar'
             onPress={startTimer}
+            color='#fff'
+            
           />
-          <Button
+          <Title
             title='Parar'
             onPress={stopTimer}
+            color='#fff'
           />
-          <Button
-            title='Limpar'
+          <Title
+           title='Limpar'
             onPress={clear}
+            color='#fff'
           />
+        </Envolve>
 
       </Container>
   )

@@ -16,8 +16,19 @@ export const Text = styled.Text`
 
 `;
 
+export const Envolve = styled.View`
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px ;
+  
+  border-radius: 15px;
+  background-color: black;
+
+`;
 
 
-export const Button = styled.Button`
-    flex-direction: row;
+export const Title = styled.Button`
+    
 `;
